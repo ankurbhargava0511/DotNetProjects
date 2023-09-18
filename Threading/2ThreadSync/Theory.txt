@@ -1,0 +1,10 @@
+﻿1/ Interlock => It has good performance , at it only isolate the variable from other thead ,but it can only be used for Sum, mul, etc
+2/ Lock => Lock , lock all the tread and can be used when you need to lock execution on certain numbers of lines, etc. Lock is just a short hand of Monitor as lock only provide basic functionality
+3/ Monitor=> Monitor provide advance control over the execution.  You can use Wiat, Pulse and Pulse all,  To Achieve consistancy to achive syncronisation
+4/ ManualResetEvent=> Read wait for Write. One thread signal all other thread.
+5/ AutoResetevent=> AutoResetEvent is used to signal between two threads. Both threads share the same AutoResetEvent object. thread enter wait state by calling Waitone.. When Second thread call the set method it unblock the wait thread
+it maintain boolen value like Manualreset, false= block, true = unblock. For example multithread wants to write to a file. so it will allow only one thread to write to a file.
+Thus we start auto reset with true. if main thread set the value multi thread start executing.
+6 Mutex => Mutex grant exclusive access to the shared resources to only one thread. if mutex is acquire  , second thread will be suspended. If you try to release mutex from main /other thread , it will give error .
+7 Semaphore=> This allow to run n number to thread in the thread safe manner, unlike other which only allow one thread.(Intital and max count), Example will execute 4 thread together.
+8 Deadlock -> Specify execution order or use monitor with timeout.

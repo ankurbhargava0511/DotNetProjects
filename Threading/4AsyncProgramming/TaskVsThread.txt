@@ -1,0 +1,27 @@
+﻿Thread is low level implimentaion where as Task is High Level implimentation
+Thread take resources task doesnt
+Thread class provide more control
+Thread for Long running process and task for async programming
+Task restuen result where as Thread there is no direct option
+Task support cancellation using cancellation token
+Task can can have multiple processing happening in same time. Thread can only run one task
+Thread do not use thread pool,
+
+
+
+Task Via
+Task()
+Task.Factory.Start
+Task.Run() => This is recommandation
+
+
+
+ContinueWith=> Once the task it finish continue with will execute next task and result of task one will be send to continuation task
+
+
+Option=> Faulted, Completed, Error, Cancel
+
+
+Task vs Task vs Async Await
+Task.wait : block the thread. task run on a thread from thread pool
+Async await :  keep processing the main thread. 

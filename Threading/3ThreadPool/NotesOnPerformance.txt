@@ -1,0 +1,6 @@
+﻿How to check Performance
+1# Task manager
+2# using msinfo32 Command  => Check processor
+3# in code use Environment.ProcessorCount
+4# echo %Number_Of_Processors% on command line
+

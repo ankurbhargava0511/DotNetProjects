@@ -1,0 +1,84 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace AsynchronousProgrammingInCsharp
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        public static int count = 0;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream("C:\\Users\\Munes\\OneDrive\\Desktop\\Data.txt", FileMode.Open,
+               FileAccess.Read, FileShare.Read, 1024,
+               FileOptions.Asynchronous);
+
+            Byte[] data = new Byte[100000000];
+
+           
+            IAsyncResult reslut = fs.BeginRead(data, 0, data.Length, new AsyncCallback(readFile), fs);
+
+          
+            label2.Text = count.ToString() + " characters in file  using Asynchronous";
+
+        }
+        // This is Sync
+        private void CountCharacters()
+        {
+            int count = 0;
+            // Create a StreamReader and point it to the file to read
+            using (StreamReader reader = new StreamReader("C:\\Users\\Munes\\OneDrive\\Desktop\\Data.txt"))
+            {
+                string content = reader.ReadToEnd();
+                count = content.Length;
+                // Make the program look busy for 5 seconds
+                Thread.Sleep(5000);
+            }
+            label2.Text = count.ToString() + " characters in file  using Asynchronous";
+
+
+        }
+
+        private void readFile(IAsyncResult ar)
+        {
+
+            Stream stream = (Stream)ar.AsyncState;
+
+            while (!ar.IsCompleted)
+            {
+                label2.Invoke(new MethodInvoker(delegate ()
+                {
+                    label2.Text = "Processing file. Please wait...";
+                }));
+
+            }
+            Thread.Sleep(5000);
+
+            count = stream.EndRead(ar);
+            stream.Close();
+
+            label2.Invoke(new MethodInvoker(delegate ()
+            {
+                label2.Text = count.ToString() + " characters in file  using Asynchronous";
+            }));
+
+
+
+
+        }
+
+    }
+}

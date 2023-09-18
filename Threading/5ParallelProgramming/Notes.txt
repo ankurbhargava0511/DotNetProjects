@@ -1,0 +1,12 @@
+﻿Parallel Programming
+Parallel programming is used whenin the execution flow is broken up into samll pieces and can be done in concurrently by multicore, processors .
+That is, many calculation are carried out simultaneously.
+
+Data Parallelism: Operation happen on each piece of data simultaneously
+Parallel.For
+parallel.Foreach
+
+Task Parallelism: task are executed independently. That is each function exexute diffect code section independently
+Parallel.Invoke
+
+Task Parallel Programming => Recommended way
