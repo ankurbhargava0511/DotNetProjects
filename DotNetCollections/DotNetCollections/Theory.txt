@@ -1,0 +1,23 @@
+﻿# Immutable collection=> You cannot add add or remove item from immutable collection => when you do change the collection new instants is provided
+
+# concurrent collection As mutate the collection can cause issue like while removing the item from empty collection thus we use tryXXXX
+## Stack=> TryPop, Try Peek
+## Queue=> TryDequeue , Try Peek
+## Bag=> TryTake , Try Peek
+
+Bag does not guarantee any specific order for taking element out. Use when you dont care about order. 
+As no order it provide better performance.
+Concurrent item keep item in seperate collection , one seperate collection per thread, no Synchronization needed. If it try to take element from another thread its give performance hit
+
+##Dictionary
+AddOrUpdate=> update value of the items
+TryRemmove=> it will remove the item in the thread safe way
+updating value=>with update value // refer example
+
+Why we need to set lamba explicitily-. Any such mutation can be call anynumber of time, so any sideffect need to be explicity overritten. 
+thus in example we are updating local variable
+
+IproducerConsumer=> Consurrent collection are inherited from Iproducerconsumer like bag, stack, query
+IproducerConsumerCollection<T> =>bool TryAdd(T item); boolTryTake(out T item);
+
+Blocking collection: is the warpper over IproducerConsumer=> this is use when the collection is bounded like only 5 member
