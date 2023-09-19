@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Threading._2ThreadSync;
+using ThreadingBasic;
 
 namespace Threading
 {
     public static class ThreadingInGeneral
     {
+
+        /*
+         * Thread.IsBackgroud= True 
+         */
 
         public static void ExecuteTests()
         {
@@ -16,13 +22,19 @@ namespace Threading
             //ThreadBasic cls = new ThreadBasic();
             //cls.RunThread();
 
-            //Console.WriteLine("Thread Start , alive, etc");
-            //ThreadBasic2 b = new ThreadBasic2();
-            //b.StartTest();
+            //Console.WriteLine("Thread Start , alive, etc, Join");
+            //ThreadBasic2.StartTest();
+
+
+            //Console.WriteLine("Thread Cancel/Abort");
+            //ThreadCancel.runTask();
+
 
             //Console.WriteLine("Interlock");
             //Do_1_Interlock objI = new Do_1_Interlock();
             //objI.DoInterlock();
+
+            //Do_1_Interlock2.TestCharacter();
 
             //Console.WriteLine("Lock");
             //Do_2_Lock objL = new Do_2_Lock();
@@ -39,15 +51,26 @@ namespace Threading
             //Do4ManualResetEvent.DoManualReset();
 
 
+
             //Console.WriteLine("AutoReset");
             //Do5AutoResetEvent.DoAutoReset();
 
+            //Do5AutoResetEventandManualResetSignaling.TestBankTerminalWithManualReset();
+            //Do5AutoResetEventandManualResetSignaling.TestBankTerminalWithAutoReset();
+
+            //Do5zaCountDownEvent.TestCountdown();
+            Do5zbBarrier.TestBarrier();
 
             //Console.WriteLine("Mutex");
             //Do6Mutex.DoMutex();
 
             //Console.WriteLine("Semaphore");
             //Do7Semaphore.DoSemaphore();
+
+
+
+            //Console.WriteLine("Semaphore example with guest");
+            //Do7SemaphoreBounceExample.DoSemaphore();
 
             //Console.WriteLine("Threadpool basic");
             //ThreadPoolBasic.CreateThreadPoolThread();
@@ -58,6 +81,8 @@ namespace Threading
 
             //Console.WriteLine("with and without thread Performance");
             //ThreadsPerformance.ThreadsPerformanceTest();
+
+            Console.ReadLine();
 
 
         }

@@ -1,10 +1,44 @@
-﻿1/ Interlock => It has good performance , at it only isolate the variable from other thead ,but it can only be used for Sum, mul, etc
+﻿In dotnet all object are store in help so it can be access by multiple code.
+1/ Interlock => It has good performance , at it only isolate the variable from other thead ,but it can only be used for Sum, mul, etc via reference 
+-- Use for increments
+-- use for add
+-- use for exchange
+-- use for comapre exchange (to make singelton)
 2/ Lock => Lock , lock all the tread and can be used when you need to lock execution on certain numbers of lines, etc. Lock is just a short hand of Monitor as lock only provide basic functionality
-3/ Monitor=> Monitor provide advance control over the execution.  You can use Wiat, Pulse and Pulse all,  To Achieve consistancy to achive syncronisation
+3/ Monitor=> Monitor provide advance control over the execution.  You can use Wiat, Pulse and Pulse all,  To Achieve consistancy to achive synchronization
+3a/ ReadWriteLockSlim=> if you want to manage read and write then use this. --> you can use timeout also you can have LockRecursionPolicy.SupportsRecursion
+	It is use to protect a resources
+
+For here its not locking , it is signalling
+
+4/ Manual Rest and AUto Reset is used for signaling. we need to wait for the state of the task, like IP calling. or like waiting for operation to completed.
+Difference between Manual and Auto is that in manual we have to rest at the start of the next operation(dont do it just after set) where as auto will take care of it. 
+so why we need manual, if you have some specific requirement where dev need to have control over reset.
 4/ ManualResetEvent=> Read wait for Write. One thread signal all other thread.
 5/ AutoResetevent=> AutoResetEvent is used to signal between two threads. Both threads share the same AutoResetEvent object. thread enter wait state by calling Waitone.. When Second thread call the set method it unblock the wait thread
 it maintain boolen value like Manualreset, false= block, true = unblock. For example multithread wants to write to a file. so it will allow only one thread to write to a file.
 Thus we start auto reset with true. if main thread set the value multi thread start executing.
+
+5a / Countdown=> same as auto or manual reset , just that it what for n number of thread instead of 1
+5b / In case you have algorithm where you needed phase wise processing of thread. Phase one all thread and then phase 2 all thread use barrier
+
 6 Mutex => Mutex grant exclusive access to the shared resources to only one thread. if mutex is acquire  , second thread will be suspended. If you try to release mutex from main /other thread , it will give error .
+Mutex work at the process level , suppose you want to open only one WPF app to be open.
 7 Semaphore=> This allow to run n number to thread in the thread safe manner, unlike other which only allow one thread.(Intital and max count), Example will execute 4 thread together.
-8 Deadlock -> Specify execution order or use monitor with timeout.
+
+
+8 SpinLock and spinwait
+you can use this when you have to do context switching in your code, itsead of wait it is for loop , where shoet waiting (working with devices)
+updatage spin is use for pulse or heartbeat kind of scenario
+
+
+
+
+Deadlock -> Specify execution order or use monitor with timeout.
+
+
+Synchronization Context=> 
+Each Ui provide a synchronization context, 
+--Windows provide SynchronizationContext.Current , u can use it to say context.send
+--WPF provide Application.current.Dispatcher
+--Child thread do not have its context , only application main thread has.

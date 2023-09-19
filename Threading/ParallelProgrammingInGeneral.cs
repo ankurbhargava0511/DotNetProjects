@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Threading.ParallelProgramming;
+using Threading.PLinq;
 
 namespace Threading
 {
@@ -12,6 +13,7 @@ namespace Threading
     {
 
         /* Type of Parallel programming Programing
+         * Parallel Class => Parallel.Invoke
          * Data Parallel: For, ForEach
          * Task Parallel: Invoke
          */
@@ -20,7 +22,6 @@ namespace Threading
 
         public static void ExecuteTests()
         {
-
             //Console.WriteLine("Example of Parallel For Loop");
             //Parallel1For.runTask();
 
@@ -33,8 +34,15 @@ namespace Threading
             //Console.WriteLine("Example of Parallel ForEach Loop");
             //Parallel2ForEach.runTask();
 
-            Console.WriteLine("Example of Parallel Invoke");
-            Parallel3Invoke.runTask();
+            //Console.WriteLine("Example of Parallel Invoke");
+            //Parallel3Invoke.runTask();
+
+
+            //Console.WriteLine("Using Parallel class. Invoking Methods in Parallel");
+            //Parallel3aInvoke.runTask();
+
+            Console.WriteLine("In case of Parallel cancellation token whould not cancel the task , and it will lead to RanTocomplition, so we need to cancel Method as well");
+            Parallel4Cancelling.runTask();
 
 
         }

@@ -13,6 +13,7 @@ Task Via
 Task()
 Task.Factory.Start
 Task.Run() => This is recommandation
+Task.status will give you the state of the task(Create, Waiting for activation, WaitingToRun, Running, WiatingforChildredtTOcomplete, RanToCompleted, Canceled, Faulted)
 
 
 
@@ -24,4 +25,22 @@ Option=> Faulted, Completed, Error, Cancel
 
 Task vs Task vs Async Await
 Task.wait : block the thread. task run on a thread from thread pool
-Async await :  keep processing the main thread. 
+Async await :  keep processing the main thread.  +++ Always await an awaitable method if possible, otherwise all exception be throe will be unobserve.
+
+
+Async will return three type
+void=> async Void methodname
+Task=> async Task 
+Task<T>=> sync Task <T>
+
+await => await can be use any where , even in parameter
+
+Int result= await Testasync(await mytask, await mystuff());
+Delegate
+Func<Task<int>> getNumberAsync= async delegate{retrn 3;};
+lambda
+Func<Task<string>> getWordsAsync= async ()=>"hello";
+
+but await cannot be a part of 
+#catch block
+#lock

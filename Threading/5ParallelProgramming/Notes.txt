@@ -1,12 +1,24 @@
 ﻿Parallel Programming
-Parallel programming is used whenin the execution flow is broken up into samll pieces and can be done in concurrently by multicore, processors .
+Parallel programming is used whenin the execution flow is broken up into smmall pieces and can be done in concurrently by multicore, processors .
 That is, many calculation are carried out simultaneously.
 
-Data Parallelism: Operation happen on each piece of data simultaneously
+Parallel Programming take advantake of multicore
+
+Data Parallelism: Operation happen on each piece of data simultaneously --> Partitioning Data
 Parallel.For
 parallel.Foreach
 
-Task Parallelism: task are executed independently. That is each function exexute diffect code section independently
+Task Parallelism: task are executed independently. That is each function exexute diffect code section independently --> Partitioning Task
 Parallel.Invoke
 
+
+PFX=> PLINQ +Parallel Class
+
 Task Parallel Programming => Recommended way
+
+
+
+
+ In case of Parallel cancellation token whould not cancel the task , and it will lead to RanTocomplition, so we need to cancel Method as well
+
+  

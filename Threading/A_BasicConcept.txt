@@ -1,0 +1,12 @@
+﻿1 Async => Task executing intependent of main thread
+2 Concurrency => Multiple task running independendy managing the interaction with each other  . 
+3 Parallel => Parallel mean multiple process running at same time on multiprocess computer (computing)
+4 Thread is a component of Process, to perform a task. Can share same memory
+5 process=> to insolate program from each other. they dont share memory unit. I process can span multiple thread. TO start process use "Process.Start"
+6 Thread pool => is to store thread , it use thread scheduler to run thread.
+
+
+Process and thread can run with different priority. 
+
+
+Thread Stack. Ecah thread get it own stack ,(default size=1MB) stored in TLS(thread local storage)

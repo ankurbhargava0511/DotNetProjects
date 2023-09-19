@@ -1,0 +1,12 @@
+﻿To use Pling simpily use AsParallel
+
+ should not use multiple as parallel 
+
+ Not all query operator can be parallizied => Pling do it sequencely if it suspect operation may slow doen performance like 
+ =>Take, Take while, skip skipwhile, indexed select, select Many, elementAt
+
+ if you want to remove some sequence then that need to be before as parallel like where
+
+ Join, groupby, groupJoin, distinct, union Intersect, except can be parallisied by can have a cost
+
+

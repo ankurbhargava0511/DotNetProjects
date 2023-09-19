@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Threading.AsyncProgramming
 {
-    public static class Task9AsyncAwait
+    public static class Tasks1AsyncAwait
     {
         public static async void runTask()
         {

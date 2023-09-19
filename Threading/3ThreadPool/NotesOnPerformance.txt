@@ -1,4 +1,7 @@
-﻿How to check Performance
+﻿Why Thread pool: Creating new thread is expensive . so  thread pool create some thread and provide as needed. if needed it can create/ remove  threads
+
+
+How to check Performance
 1# Task manager
 2# using msinfo32 Command  => Check processor
 3# in code use Environment.ProcessorCount

@@ -27,10 +27,17 @@ namespace Threading.AsyncProgramming
 
             task1.ContinueWith((details) =>
             {
-                Console.WriteLine("new constinue with method");
+                Console.WriteLine("new continue with method");
             });
 
             Console.WriteLine(task1.Result);
+
+            Task.Delay(10000).ContinueWith((details) =>
+            {
+                Console.WriteLine("Continue with delay .continue with delay with method");
+            });
+
+            
 
             Task.Delay(1000).Wait();
             Console.WriteLine($"Main Thread : {Thread.CurrentThread.ManagedThreadId} Completed");

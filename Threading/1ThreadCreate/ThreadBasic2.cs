@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Threading
+namespace ThreadingBasic
 {
-    public  class ThreadBasic2
+    public static class ThreadBasic2
     {
 
-        public void StartTest()
+        public static void StartTest()
         {
             Console.WriteLine("Main method execution started");
 
@@ -18,9 +18,9 @@ namespace Threading
             Thread t2 = new Thread(ThreadBasic2.Method2);
             t2.Start();
 
-            if (t1.Join(2000))
+            if (t1.Join(2000))   
             {
-                Console.WriteLine("Method1 execution completed");
+                Console.WriteLine("Method1 execution completed. Join take timeout as parameter");
             }
 
             t2.Join();
@@ -28,14 +28,14 @@ namespace Threading
 
             if (t1.IsAlive)
             {
-                Console.WriteLine("method1 execution is still going on");
+                Console.WriteLine("method1 execution is still going on.Join take timeout as parameter");
             }
             else
             {
                 Console.WriteLine("Method1 execution completed");
             }
             Console.WriteLine("Main method execution completed");
-            Console.ReadLine();
+            //Console.ReadLine();
         }
 
         static void Method1()
