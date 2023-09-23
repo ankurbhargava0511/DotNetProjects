@@ -1,14 +1,21 @@
 using LearningSomething.Middlewares;
-using System.Runtime.InteropServices;
+using Microsoft.Extensions.FileProviders;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddTransient<CustomMiddleware>();
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions()
+{
+    WebRootPath = "myroot"
+});
 var app = builder.Build();
 
 //app.MapGet("/", () => "Hello World!");
+app.UseStaticFiles();
 
-app.Use(async  (HttpContext context, RequestDelegate next) =>
+app.UseStaticFiles(new StaticFileOptions()
+{
+    FileProvider = new PhysicalFileProvider(builder.Environment.ContentRootPath + "\\wwwmyroot")
+});
+
+app.Use(async (HttpContext context, RequestDelegate next) =>
 {
     await context.Response.WriteAsync("First Middleware");
     await next(context);
@@ -29,6 +36,7 @@ app.UseWhen(
     context => context.Request.Query.ContainsKey("id"),
     app =>
     {
+        // Below Middle where will be executed when contition met
         app.Use(async (HttpContext context, RequestDelegate next) =>
         {
             await context.Response.WriteAsync(" use When ");
