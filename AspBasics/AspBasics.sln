@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic1Middleware", "Basic1Middleware\Basic1Middleware.csproj", "{7B1D7267-B32A-4523-9C99-D2A2007A0503}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic1Middleware", "Basic1Middleware\Basic1Middleware.csproj", "{7B1D7267-B32A-4523-9C99-D2A2007A0503}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic2Routing", "Basic2Routing\Basic2Routing.csproj", "{1D080970-4CFF-45B6-BB47-FB6E5F0B55EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic2Routing", "Basic2Routing\Basic2Routing.csproj", "{1D080970-4CFF-45B6-BB47-FB6E5F0B55EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic3Controllers", "Basic3Controllers\Basic3Controllers.csproj", "{A7FD35FD-C3D8-46F9-87B3-C0FCA3F8B5AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic4ServicesDI", "Basic4ServicesDI\Basic4ServicesDI.csproj", "{38E53F12-DA3C-4F10-8EC9-DAFA7A02CC5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{1D080970-4CFF-45B6-BB47-FB6E5F0B55EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D080970-4CFF-45B6-BB47-FB6E5F0B55EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D080970-4CFF-45B6-BB47-FB6E5F0B55EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7FD35FD-C3D8-46F9-87B3-C0FCA3F8B5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7FD35FD-C3D8-46F9-87B3-C0FCA3F8B5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7FD35FD-C3D8-46F9-87B3-C0FCA3F8B5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7FD35FD-C3D8-46F9-87B3-C0FCA3F8B5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E53F12-DA3C-4F10-8EC9-DAFA7A02CC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E53F12-DA3C-4F10-8EC9-DAFA7A02CC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E53F12-DA3C-4F10-8EC9-DAFA7A02CC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E53F12-DA3C-4F10-8EC9-DAFA7A02CC5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
