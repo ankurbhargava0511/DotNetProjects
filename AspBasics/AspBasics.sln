@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic2Routing", "Basic2Rout
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic3Controllers", "Basic3Controllers\Basic3Controllers.csproj", "{A7FD35FD-C3D8-46F9-87B3-C0FCA3F8B5AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic4ServicesDI", "Basic4ServicesDI\Basic4ServicesDI.csproj", "{38E53F12-DA3C-4F10-8EC9-DAFA7A02CC5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic4ServicesDI", "Basic4ServicesDI\Basic4ServicesDI.csproj", "{38E53F12-DA3C-4F10-8EC9-DAFA7A02CC5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic5EnvandConfig", "Basic5EnvandConfig\Basic5EnvandConfig.csproj", "{4468C0BC-C328-4167-A34A-78E4BE65C303}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic5EnvandConfig", "Basic5EnvandConfig\Basic5EnvandConfig.csproj", "{4468C0BC-C328-4167-A34A-78E4BE65C303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic6LogAndFilter", "Basic6LogAndFilter\Basic6LogAndFilter.csproj", "{256DB51D-512A-401E-990B-D2C6D3426B4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4468C0BC-C328-4167-A34A-78E4BE65C303}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4468C0BC-C328-4167-A34A-78E4BE65C303}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4468C0BC-C328-4167-A34A-78E4BE65C303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256DB51D-512A-401E-990B-D2C6D3426B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256DB51D-512A-401E-990B-D2C6D3426B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256DB51D-512A-401E-990B-D2C6D3426B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256DB51D-512A-401E-990B-D2C6D3426B4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
