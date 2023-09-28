@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiRestWithOpenApi</name>
+    </assembly>
+    <members>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v1.ContactsController.Get">
+            <summary>
+            Insert using Snipped for Getall
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v1.ContactsController.Get(System.Int32)">
+            <summary>
+              Insert using Snipped for Get by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v1.ContactsController.Post(WebApiRestWithOpenApi.Services.Contact)">
+            <summary>
+            Insert using Snipped for Add new contact
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v1.ContactsController.Put(System.Int32,WebApiRestWithOpenApi.Services.Contact)">
+            <summary>
+            Insert using Snipped for to update 
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v1.ContactsController.Delete(System.Int32)">
+            <summary>
+            Insert using Snipped for delete record
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v2.ContactsController.Get">
+            <summary>
+            Insert using Snipped for Getall
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v2.ContactsController.Get(System.Int32)">
+            <summary>
+              Insert using Snipped for Get by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v2.ContactsController.Post(WebApiRestWithOpenApi.Services.Contact)">
+            <summary>
+            Insert using Snipped for Add new contact
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v2.ContactsController.Put(System.Int32,WebApiRestWithOpenApi.Services.Contact)">
+            <summary>
+            Insert using Snipped for to update 
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v2.ContactsController.Delete(System.Int32)">
+            <summary>
+            Insert using Snipped for delete record
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v3.ContactsController.Get">
+            <summary>
+            Insert using Snipped for Getall
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v3.ContactsController.Get(System.Int32)">
+            <summary>
+              Insert using Snipped for Get by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v3.ContactsController.Post(WebApiRestWithOpenApi.Services.Contact)">
+            <summary>
+            Insert using Snipped for Add new contact
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v3.ContactsController.Put(System.Int32,WebApiRestWithOpenApi.Services.Contact)">
+            <summary>
+            Insert using Snipped for to update 
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v3.ContactsController.Delete(System.Int32)">
+            <summary>
+            Insert using Snipped for delete record
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v4.ContactsController.Get">
+            <summary>
+            Insert using Snipped for Getall
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v4.ContactsController.Get(System.Int32)">
+            <summary>
+              Insert using Snipped for Get by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v4.ContactsController.Post(WebApiRestWithOpenApi.Services.Contact)">
+            <summary>
+            Insert using Snipped for Add new contact
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v4.ContactsController.Put(System.Int32,WebApiRestWithOpenApi.Services.Contact)">
+            <summary>
+            Insert using Snipped for to update 
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRestWithOpenApi.Controllers.v4.ContactsController.Delete(System.Int32)">
+            <summary>
+            Insert using Snipped for delete record
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
