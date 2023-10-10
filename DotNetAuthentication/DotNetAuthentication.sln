@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.net1_rawAuthentication", "Asp.net1_rawAuthentication\Asp.net1_rawAuthentication.csproj", "{7AD3A413-51ED-4990-B48D-70752437913A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.net2_cookieAuthentication", "Asp.net2cookieAuthentication\Asp.net2_cookieAuthentication.csproj", "{B760E5AC-96FE-435A-839B-43FDE41B2DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.net3_RoleAuthentication", "Asp.net3_RoleAuthentication\Asp.net3_RoleAuthentication.csproj", "{A8FDC297-7FCC-4A74-98B0-15235471F37C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AD3A413-51ED-4990-B48D-70752437913A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD3A413-51ED-4990-B48D-70752437913A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD3A413-51ED-4990-B48D-70752437913A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD3A413-51ED-4990-B48D-70752437913A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B760E5AC-96FE-435A-839B-43FDE41B2DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B760E5AC-96FE-435A-839B-43FDE41B2DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B760E5AC-96FE-435A-839B-43FDE41B2DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B760E5AC-96FE-435A-839B-43FDE41B2DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8FDC297-7FCC-4A74-98B0-15235471F37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FDC297-7FCC-4A74-98B0-15235471F37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FDC297-7FCC-4A74-98B0-15235471F37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FDC297-7FCC-4A74-98B0-15235471F37C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60557DDE-29F7-43B5-B014-D4ED9DC14CB5}
+	EndGlobalSection
+EndGlobal
